@@ -47,8 +47,8 @@
     <AssemblyOriginatorKeyFile>MementoFX.Messaging.Postie.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Memento, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bca5f6a4d14d06d8, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MementoFX.1.1.0\lib\net451\Memento.dll</HintPath>
+    <Reference Include="Memento, Version=1.2.0.0, Culture=neutral, PublicKeyToken=bca5f6a4d14d06d8, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MementoFX.1.2.0\lib\net451\Memento.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
