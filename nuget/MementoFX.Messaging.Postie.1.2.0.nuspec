@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+    <metadata>
+        <id>MementoFX.Messaging.Postie</id>
+        <version>1.2.0</version>
+        <title>MementoFX Postie</title>
+        <authors>Mastreeno ltd</authors>
+        <owners>Mastreeno ltd</owners>
+        <licenseUrl>http://www.mastreeno.com/license/evaluation</licenseUrl>
+        <projectUrl>http://mementofx.mastreeno.com</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>An in-memory bus for MementoFX</description>
+        <releaseNotes />
+        <copyright>Copyright 2016 Mastreeno ltd. All rights reserved</copyright>
+        <tags>mementofx bus postie cqrs ddd</tags>
+        <dependencies>
+            <dependency id="MementoFX" version="1.1.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\src\MementoFX.Messaging.Postie\bin\Release\Memento.Messaging.Postie.dll" target="lib\net451\Memento.Messaging.Postie.dll" />
+        <file src="..\src\MementoFX.Messaging.Postie\bin\Release\Memento.Messaging.Postie.pdb" target="lib\net451\Memento.Messaging.Postie.pdb" />
+        <file src="..\src\MementoFX.Messaging.Postie\bin\Release\Memento.Messaging.Postie.XML" target="lib\net451\Memento.Messaging.Postie.XML" />
+    </files>
+</package>
