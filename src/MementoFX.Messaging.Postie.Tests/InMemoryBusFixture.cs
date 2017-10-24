@@ -128,16 +128,18 @@ namespace MementoFX.Messaging.Postie.Tests
             public void Send()
             {
                 var command = new InMemoryBusFixture.SendMethod.FakeSaga.StartCommand();
-                var containerMock = new Mock<ITypeResolver>().Object;
-                IBus bus = new InMemoryBus(containerMock);
+                var containerMock = new Mock<ITypeResolver>();
+                containerMock.Setup(o => o.Resolve(typeof(FakeSaga)))
+                                .Returns(new FakeSaga());
+                IBus bus = new InMemoryBus(containerMock.Object);
                 bus.RegisterSaga<FakeSaga>();
                 bus.Send(command);
             }
 
             public class FakeSaga : Saga, IAmStartedBy<InMemoryBusFixture.SendMethod.FakeSaga.StartCommand>
             {
-                public FakeSaga(IBus bus, IEventStore eventStore, IRepository repository)
-                    : base(bus, eventStore, repository) { }
+                public FakeSaga()
+                    : base() { }
 
                 public void Handle(FakeSaga.StartCommand message)
                 {
