@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Memento.Messaging.Postie
+namespace MementoFX.Messaging.Postie
 {
     /// <summary>
     /// Provides the implementation of an in-memory synchronous bus

@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento.Messaging.Postie", "src\MementoFX.Messaging.Postie\Memento.Messaging.Postie.csproj", "{C5835D3F-5103-43CE-9B0A-7CFCA229B9C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoFX.Messaging.Postie", "src\MementoFX.Messaging.Postie\MementoFX.Messaging.Postie.csproj", "{C5835D3F-5103-43CE-9B0A-7CFCA229B9C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento.Messaging.Postie.Tests", "src\MementoFX.Messaging.Postie.Tests\Memento.Messaging.Postie.Tests.csproj", "{DF2CAB07-B57E-488F-8A19-7752CEF82424}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoFX.Messaging.Postie.Tests", "src\MementoFX.Messaging.Postie.Tests\MementoFX.Messaging.Postie.Tests.csproj", "{DF2CAB07-B57E-488F-8A19-7752CEF82424}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B91874A-FF4D-48B3-9E48-1773C8A58C3A}
 	EndGlobalSection
 EndGlobal

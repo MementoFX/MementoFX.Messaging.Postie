@@ -1,20 +1,20 @@
 ﻿using System;
 using Moq;
-using NUnit.Framework;
+using Xunit;
 using SharpTestsEx;
-using Memento;
-using Memento.Messaging.Postie;
-using Memento.Persistence;
+using MementoFX;
+using MementoFX.Messaging.Postie;
+using MementoFX.Persistence;
 
-namespace Memento.Messaging.Postie.Tests
+namespace MementoFX.Messaging.Postie.Tests
 {
-    [TestFixture]
+    
     public class InMemoryBusFixture
     {
-        [TestFixture]
+        
         public class Constructor
         {
-            [Test]
+            [Fact]
             public void Ctor_should_throw_ArgumentNullException_on_null_container_and_value_of_parameter_should_be_container()
             {
                 Executing.This(() => new InMemoryBus(null))
@@ -29,10 +29,10 @@ namespace Memento.Messaging.Postie.Tests
             }
         }
 
-        [TestFixture]
+        
         public class RegisterSagaMethod
         {
-            [Test]
+            [Fact]
             public void RegisterSaga_should_throw_InvalidOperationException_on_type_arguments_that_do_not_implement_IAmStartedBy_interface()
             {
                 var containerMock = new Mock<ITypeResolver>().Object;
@@ -42,7 +42,7 @@ namespace Memento.Messaging.Postie.Tests
                     .Throw<InvalidOperationException>();   
             }
 
-            [Test]
+            [Fact]
             public void RegisterSaga_should_throw_InvalidOperationException_sagas_that_implements_IAmStartedBy_more_than_once()
             {
                 var containerMock = new Mock<ITypeResolver>().Object;
@@ -52,7 +52,7 @@ namespace Memento.Messaging.Postie.Tests
                     .Throw<InvalidOperationException>();
             }
 
-            [Test]
+            [Fact]
             public void RegisterSaga_should_not_throw_InvalidOperationException_on_type_arguments_that_implement_IAmStartedBy_interface()
             {
                 var containerMock = new Mock<ITypeResolver>().Object;
@@ -121,10 +121,10 @@ namespace Memento.Messaging.Postie.Tests
             }
         }
 
-        [TestFixture]
+        
         public class SendMethod
         {
-            [Test]
+            [Fact]
             public void Send()
             {
                 var command = new InMemoryBusFixture.SendMethod.FakeSaga.StartCommand();

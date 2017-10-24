@@ -1,4 +1,4 @@
-﻿using Memento.Persistence;
+﻿using MementoFX.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Memento.Messaging.Postie
+namespace MementoFX.Messaging.Postie
 {
     /// <summary>
     /// This class is used to define sagas containing data and handling a message.

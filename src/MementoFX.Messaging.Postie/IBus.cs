@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Memento.Messaging.Postie
+namespace MementoFX.Messaging.Postie
 {
     /// <summary>
     /// Provides the definition for Postie's buses
