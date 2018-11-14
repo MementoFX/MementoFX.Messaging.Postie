@@ -10,6 +10,10 @@
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <Authors>Andrea Saltarello, Managed Designs</Authors>
+    <RepositoryUrl>https://github.com/MementoFX/MementoFX.Messaging.Postie</RepositoryUrl>
+    <PackageProjectUrl>https://opensource.manageddesigns.it/mementofx</PackageProjectUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/RPL-1.5</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MementoFX" Version="2.0.0-pre5" />
+    <PackageReference Include="MementoFX" Version="2.0.0-pre6" />
     <PackageReference Include="Moq" Version="4.7.142" />
     <PackageReference Include="SharpTestsEx" Version="2.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
