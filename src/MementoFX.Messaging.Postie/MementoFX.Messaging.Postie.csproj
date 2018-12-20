@@ -3,7 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>2.0.0-pre2</Version>
+    <Version>2.0.0</Version>
     <Product>MementoFX</Product>
     <Description>An in-memory message dispatcher for MementoFX</Description>
     <Company>Managed Designs</Company>
@@ -33,7 +33,7 @@
     <DocumentationFile>bin\Release\MementoFX.Messaging.Postie.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MementoFX" Version="2.0.0-pre6" />
+    <PackageReference Include="MementoFX" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
